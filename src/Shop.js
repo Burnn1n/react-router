@@ -10,10 +10,7 @@ function Shop() {
   const [items, setItems] = useState([]);
 
   const fetchItems = async () =>{
-    const data = await fetch(
-      "https://fakestoreapi.com/products?limit=7"
-    );
-    
+    const data = await fetch("https://fakestoreapi.com/products?limit=7");
     const  item = await data.json();
     console.log(item);
     setItems(item);
@@ -30,7 +27,6 @@ function Shop() {
           )
         )
       }
-      
     </div>
   );
 }

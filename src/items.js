@@ -6,9 +6,10 @@ function Items({match}) {
   useEffect(() =>{
     fetchItems();
   },[]);
-
+	// state array containing data from api request
   const [items, setItems] = useState([]);
 
+	//api link																				 take id data from app.js
 	const api = "https://fakestoreapi.com/products/" + match.params.id;
 
   const fetchItems = async () =>{

@@ -1,6 +1,8 @@
 # Key words
 Link
 Router, Route Switch
+# Note
+Takes too much time to load api data
 # Installation
 ## create project
 npx create-react-app my-app
